@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Aparecida Nutrição</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="titulo">Aparecida Nutrição</h1>
+			</div>
+		</header>
+		<span id="error-session">
+			<ul id="error-messages"></ul>
+		</span>
+		<main>
+			<section class="container">
+				<h2>Meus pacientes</h2>
+				<input type="button" value="Importar pacientes" id="import">
+				<form class="formulario">
+					<tr>
+						<td>
+							<input type="text" id="nome" name="nome" placeholder="Nome">
+						</td>
+						<td>
+							<input type="text" name="peso" placeholder="Peso">
+						</td>
+						<td>
+							<input type="text" name="altura" placeholder="Altura">
+						</td>
+						<td>
+							<input type="text" name="gordura" placeholder="Massa">
+						</td>
+						<td>
+							<input type="button" value="Gravar" id="botao">
+						</td>
+					</tr>
+				</form>
+				<table>
+					<thead>
+						<tr>
+							<th id="thName">Nome</th>
+							<th id="thData">Peso(kg)</th>
+							<th id="thData">Altura(m)</th>
+							<th id="thData">Gordura Corporal(%)</th>
+							<th id="thData">IMC</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-pacientes">
+						
+					</tbody>
+				</table>
+				<label for="table-filter"></label>
+				<input type="text" name="filter" id="table-filter" placeholder="Digite o nome para pesquisa">
+			</section>
+		</main>
+		<script src="./js/script.js"></script>
+		<script src="./js/remove.js"></script>
+		<script src="./js/filter.js"></script>
+		<script src="./js/import.js"></script>
+	</body>
+</html>
